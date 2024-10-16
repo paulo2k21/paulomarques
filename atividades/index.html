@@ -58,6 +58,34 @@
             color: #7f8c8d;
             font-size: 0.9em;
         }
+        .accordion {
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2em;
+            transition: 0.4s;
+            background-color: #3498db;
+            color: white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #2980b9;
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .panel p {
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
@@ -78,23 +106,62 @@
     <section>
         <h2>Linguagem de Programação</h2>
         <ul>
-            <!-- Adicionar arquivos conforme necessário -->
             <li><a href="Atividade Avaliativa - Instruções e Prazo de Apresentação.pdf" download>Atividade Avaliativa - Instruções e Prazo de Apresentação</a></li>
         </ul>
     </section>
 
     <section>
         <h2>Fundamentos e Arquitetura de Computadores</h2>
-        <ul>
-            <!-- Adicionar arquivos conforme necessário -->
-            <li><a href="#" download>Sem Arquivo no momento :(</a></li>
-        </ul>
+        <button class="accordion">Turma A - Inteligência Artificial (IA)</button>
+        <div class="panel">
+            <p>
+                <strong>Projeto 1: Inteligência Artificial (IA)</strong><br>
+                <strong>Formato:</strong> Workshop<br>
+                <strong>Tema principal:</strong> Inteligência Artificial<br>
+                <strong>Foco:</strong> Como a IA pode ser usada para criar soluções inovadoras.<br><br>
+                <strong>Divisão de grupos e subtemas:</strong><br>
+                <strong>Grupo 1:</strong> O que é Inteligência Artificial? <br>
+                - Explicação simples do que é IA e como ela funciona.<br>
+                - Exemplos de inovações que surgiram com o uso da IA.<br><br>
+                <strong>Grupo 2:</strong> IA e Inovação nos Negócios <br>
+                - Como as empresas estão usando a IA para inovar e criar novos produtos e serviços.<br>
+                - Ideias de como a IA pode transformar áreas como saúde, educação e comércio.<br><br>
+                <strong>Grupo 3:</strong> IA no Dia a Dia <br>
+                - Aplicações da IA que já estão presentes no nosso cotidiano, como assistentes virtuais e recomendações personalizadas.<br>
+                - Oportunidades de inovação em serviços voltados ao consumidor.<br><br>
+                <strong>Grupo 4:</strong> IA e Automação <br>
+                - Como a IA está automatizando processos em empresas e setores produtivos.<br>
+                - Ideias de inovação para otimizar negócios e serviços por meio da automação.<br>
+            </p>
+        </div>
+
+        <button class="accordion">Turma B - Computação em Nuvem</button>
+        <div class="panel">
+            <p>
+                <strong>Projeto 2: Computação em Nuvem</strong><br>
+                <strong>Formato:</strong> Workshop<br>
+                <strong>Tema principal:</strong> Computação em Nuvem<br>
+                <strong>Foco:</strong> Como a computação em nuvem possibilita a criação de novos negócios e inovações.<br><br>
+                <strong>Divisão de grupos e subtemas:</strong><br>
+                <strong>Grupo 1:</strong> O que é Computação em Nuvem? <br>
+                - Definição simples de computação em nuvem e exemplos de como ela é usada.<br>
+                - Benefícios da nuvem para empresas e startups que desejam inovar.<br><br>
+                <strong>Grupo 2:</strong> Inovação com Serviços na Nuvem <br>
+                - Como diferentes tipos de serviços na nuvem permitem a criação de soluções inovadoras.<br>
+                - Exemplos de negócios que nasceram graças à computação em nuvem.<br><br>
+                <strong>Grupo 3:</strong> Segurança na Nuvem <br>
+                - Desafios e oportunidades de criar soluções de segurança na nuvem.<br>
+                - Como garantir que dados e informações estejam seguros em um ambiente inovador.<br><br>
+                <strong>Grupo 4:</strong> Novos Modelos de Negócios com a Nuvem <br>
+                - Como a nuvem permite criar novos modelos de negócios, como streaming, e-commerce e outros serviços digitais.<br>
+                - Ideias de inovações baseadas na flexibilidade e escalabilidade da nuvem.<br>
+            </p>
+        </div>
     </section>
 
     <section>
         <h2>Informática Aplicada</h2>
         <ul>
-            <!-- Adicionar arquivos conforme necessário -->
             <li><a href="#" download>Sem Arquivo no momento :(</a></li>
         </ul>
     </section>
@@ -102,6 +169,21 @@
     <footer>
         <p>&copy; 2024 Centro de Download de Arquivos - Professor Paulo Pereira Marques</p>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
