@@ -3,55 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download de Arquivos</title>
+    <title>Centro de Download - Arquivos por Disciplina</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f4f8;
+            background-color: #eaeff2;
             color: #333;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        header {
             text-align: center;
-            padding: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #ddd;
         }
         h1 {
-            color: #4CAF50;
             font-size: 2.5em;
-            margin-bottom: 30px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #34495e;
+            margin: 40px 0 20px 0;
+            text-align: left;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         li {
-            margin: 20px 0;
+            margin: 15px 0;
         }
         a {
             display: inline-block;
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 12px 25px;
+            font-size: 1.1em;
             color: #fff;
-            background-color: #4CAF50;
+            background-color: #3498db;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
         a:hover {
-            background-color: #45a049;
+            background-color: #2980b9;
         }
         footer {
             margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
             font-size: 0.9em;
-            color: #888;
         }
     </style>
 </head>
 <body>
-    <h1>Download de Arquivos</h1>
-    <ul>
-        <li><a href="modelo_relatorio_sistema_cozinha.docx" download>Baixar Modelo de Relatório (DOCX)</a></li>
-        <li><a href="atividade.docx" download>Atividade: Estudo de Caso - Sistema de Administração da Cozinha da Escola</a></li>
-    </ul>
+
+    <header>
+        <h1>Centro de Download de Arquivos</h1>
+        <p>Selecione os arquivos disponíveis organizados por disciplina.</p>
+    </header>
+
+    <section>
+        <h2>Análise e Projeto de Sistemas</h2>
+        <ul>
+            <li><a href="modelo_relatorio_sistema_cozinha.docx" download>Baixar Modelo de Relatório (DOCX)</a></li>
+            <li><a href="atividade.docx" download>Atividade: Estudo de Caso - Sistema de Administração da Cozinha da Escola</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Linguagem de Programação</h2>
+        <ul>
+            <!-- Adicionar arquivos conforme necessário -->
+            <li><a href="Atividade Avaliativa - Instruções e Prazo de Apresentação.pdf" download>Atividade Avaliativa - Instruções e Prazo de Apresentação</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Fundamentos e Arquitetura de Computadores</h2>
+        <ul>
+            <!-- Adicionar arquivos conforme necessário -->
+            <li><a href="#" download>Sem Arquivo no momento :(</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Informática Aplicada</h2>
+        <ul>
+            <!-- Adicionar arquivos conforme necessário -->
+            <li><a href="#" download>Sem Arquivo no momento :(</a></li>
+        </ul>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Projeto de Administração da Cozinha da Escola - Professor Paulo Pereira Marques</p>
+        <p>&copy; 2024 Centro de Download de Arquivos - Professor Paulo Pereira Marques</p>
     </footer>
+
 </body>
 </html>
